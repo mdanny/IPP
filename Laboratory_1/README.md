@@ -20,3 +20,5 @@ Tools Needed
 *node and npm
 *POSTman
 ```
+#####Getting Started
+Let’s take a look at our file structure for our Node application. This will be simplified and we’ll be putting a lot of stuff into the server.js file.

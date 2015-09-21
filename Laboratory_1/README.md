@@ -22,3 +22,13 @@ Tools Needed
 ```
 #####Getting Started
 Let’s take a look at our file structure for our Node application. This will be simplified and we’ll be putting a lot of stuff into the `server.js` file.
+
+#####File Structure
+```
+- app/
+----- models/
+---------- user.js
+- config.js
+- package.json
+- server.js
+```

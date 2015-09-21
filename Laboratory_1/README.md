@@ -1,5 +1,4 @@
-####Task:
-Develop an oAuth service which will represent an API with requests:
+####Task: Develop an oAuth service which will represent an API with requests:
 
 The main workflow of this is that we will:
 

@@ -16,3 +16,6 @@ Our API will be built with:
 3.route to authenticate a user and password and get a token.
 4.authenticated routes to get all users.
 ```
+Tools Needed
+*node and npm
+*POSTman

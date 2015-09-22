@@ -68,6 +68,8 @@ Go ahead and visit your application at `http://localhost:8080/register`. You sho
 Now we will login to gain our token for this user. For this in Postman we will gona choose POST method and in URL we will access `http://localhost:8080/api/login`. At this moment if we press send we will recive:
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/5.png "Login user without password")
 
+We got `{  "success": false,  "message": "Authentication failed. Wrong email or password or app-id."}` because we didn't input our credentials, in our case (name_surname, password, _id, email) is reqired. All of them we can find in our `server.js` in the `app.get(/register)` section. There we put manualy our credentials with we prefer before creating the user. The _id is not there because it is generated automaticaly and that's way I sad before to save that `"user": "560124dfb6cf95320b55a0ae"`.
+Now we have all the information and we can input our credentials. For this in Postman we will choose `Body` section, and from there we will pin the `x-www-form-urlencoded`. After in the `Key` section we will write `name_surname` and at it's `value` our username that we found in our `server.js` file. The same we will do with the other `Key's` as in this image below.
 
 
 

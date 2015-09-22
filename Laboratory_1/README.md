@@ -44,3 +44,8 @@ Let’s take a look at our file structure for our Node application. This will be
 ```
 The `--save` modifier will also save these packages to our `package.json` file. How convenient!
 ##Under construction
+
+#####Starting the server
+`$ node server.js`
+
+**Tip:** Use nodemon to have your server restart on file changes. Install nodemon using `npm install -g nodemon`. Then start your server with `nodemon server.js`.

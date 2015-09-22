@@ -53,6 +53,7 @@ We should be able to go to our browser and see the message from the route we cre
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/1.png "First image")
 
 As a bonus, since we used morgan, we are able to see the request logged to our console, which helps with development.
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/2.png "Second image")
 
 
 

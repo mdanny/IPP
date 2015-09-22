@@ -57,6 +57,6 @@ As a bonus, since we used morgan, we are able to see the request logged to our c
 
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/2.png "Second image")
 
-
+Now let’s switch over to POSTman
 
 ##Under construction

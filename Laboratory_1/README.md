@@ -57,6 +57,10 @@ As a bonus, since we used morgan, we are able to see the request logged to our c
 
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/2.png "Second image")
 
+Now we know our application is up and running! Let’s create a sample user using the model `user.js`
+Go ahead and visit your application at `http://localhost:8080/setup`. You should see the message ‘User saved successfully’ logged to your console and the JSON object with `{ success: true }` in your browser.
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/3.png "Create user image")
 Now let’s switch over to POSTman
+
 
 ##Under construction

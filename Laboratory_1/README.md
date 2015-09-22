@@ -49,3 +49,5 @@ The `--save` modifier will also save these packages to our `package.json` file. 
 `$ node server.js`
 
 **Tip:** Use nodemon to have your server restart on file changes. Install nodemon using `npm install -g nodemon`. Then start your server with `nodemon server.js`.
+
+We should be able to go to our browser and see the message from the route we created. Go to *http://localhost:8080* and you’ll see:

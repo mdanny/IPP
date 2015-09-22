@@ -43,7 +43,6 @@ Let’s take a look at our file structure for our Node application. This will be
 *jsonwebtoken is how we create and verify our JSON Web Tokens
 ```
 The `--save` modifier will also save these packages to our `package.json` file. How convenient!
-##Under construction
 
 #####Starting the server
 `$ node server.js`
@@ -51,3 +50,6 @@ The `--save` modifier will also save these packages to our `package.json` file. 
 **Tip:** Use nodemon to have your server restart on file changes. Install nodemon using `npm install -g nodemon`. Then start your server with `nodemon server.js`.
 
 We should be able to go to our browser and see the message from the route we created. Go to *http://localhost:8080* and you’ll see:
+
+
+##Under construction

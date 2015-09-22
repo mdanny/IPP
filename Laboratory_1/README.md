@@ -50,6 +50,10 @@ The `--save` modifier will also save these packages to our `package.json` file. 
 **Tip:** Use nodemon to have your server restart on file changes. Install nodemon using `npm install -g nodemon`. Then start your server with `nodemon server.js`.
 
 We should be able to go to our browser and see the message from the route we created. Go to *http://localhost:8080* and you’ll see:
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/1.png "First image")
+
+As a bonus, since we used morgan, we are able to see the request logged to our console, which helps with development.
+
 
 
 ##Under construction

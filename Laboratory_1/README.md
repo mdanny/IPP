@@ -72,6 +72,20 @@ We got `{  "success": false,  "message": "Authentication failed. Wrong email or 
 Now we have all the information and we can input our credentials. For this in Postman we will choose `Body` section, and from there we will pin the `x-www-form-urlencoded`. After in the `Key` section we will write `name_surname` and, at it's `value` our username that we can find in our `server.js` file. The same we will do with the other `Key's` as in this image below.
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/6.png "Login user with the correct credentials")
 
+Now after login we got our token that is valid for 24 hours as it is seted up. (We can change our validation period for the token in the `server.js` file in the `// create a token` section.
+
+You can see that in our response, we are given our token! Now let’s copy and paste that token somewhere safe until we are able to use it after we create our route middleware next.
+Testing Our Middleware:
+We have built our middleware that our Node application will run through before it gets to the routes that we want authenticated.
+Let’s go into POSTman again and try to access both routes without passing a token.
+This is our route without the token just accessing the base api route of `http://localhost:8080/api`:
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/7.png "accesing api without token")
+Now let’s pass in the token that was created before in our HTTP header as `x-access-token` accessing the users list at `http://localhost:8080/api/users`:
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/8.png "accesing api with token")
+We can also pass it in as a URL parameter by going to: `http://localhost:8080/api/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1NWZmOTgwYTA0Y2I0OTQyMDI1NzVjN2QiLCJlbWFpbCI6ImV4ZW1wbGUxLmNhcnRvZmVhbnVAZ21haWwuY29tIiwibmFtZV9zdXJuYW1lIjoiQ3Jpc3RpYW4gQ2FydG9mZWFudSIsInBhc3N3b3JkIjoicXdlcnR5IiwiYWRtaW4iOnRydWUsImxhc3RfbG9naW4iOiI4OjQyOjMyIEFNIiwidG9rZW4iOiIwIiwiX192IjowfQ.IMvPP40gm6bBwD4inzeDWCkV1pVQO_d1W-ey6NyABJI`
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/9.png "accesing api with token from browser URL")
+
+#####Conclusion
 
 
 

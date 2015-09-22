@@ -100,8 +100,10 @@ I think this application is quite useful, because, although in a very simple man
 #####Technical tasks implemented 
 * User data is saved in mongodb database, based on the mongoose model defined in the User.js file
 * We've defined several routes, such as normal routes, which are not authenticated and the other ones specified in the API section of the document, using `apiRoutes` which is an instance of the router using the express library
-* Using `'express'` and `'body-parser'` modules enables us to use body parser so we can get info from POST and/or URL parameters
-*   
+* Using `'express'` and `'body-parser'` modules enables us to use body parser so we can get info from POST and/or URL parameters and be able to retrieve responses in the form of `res.json({})`
+* The powerful mongoDB function `findOne()` which behaves exactly like a query and returns the list of json objects (users) that match the query criteria. And paired up with the javascript powerful callback mechanism it captures the POST parameters for instance and tests if they match with the query criteria. In a positive case, it provides authentication.
+
+#####Features to add:   
 
 
 ##Under construction

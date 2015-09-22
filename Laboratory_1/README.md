@@ -62,7 +62,13 @@ Now we know our application is up and running! Let’s create a sample user usin
 Go ahead and visit your application at `http://localhost:8080/register`. You should see the message ‘User saved successfully’ logged to your console and the JSON object with `{ success: true }` in your browser.
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/4.png "Postman create user image")
 ![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/3.png "Terminal Create user image")
+
 **Don't forget to save the user ID ( example: "user": "560124dfb6cf95320b55a0ae" ), you will need it later.**
+
+Now we will login to gain our token for this user. For this in Postman we will gona choose POST method and in URL we will access `http://localhost:8080/api/login`. At this moment if we press send we will recive:
+![alt tag](https://raw.githubusercontent.com/CristianChris/IPP/master/Laboratory_1/Images/5.png "Login user without password")
+
+
 
 
 

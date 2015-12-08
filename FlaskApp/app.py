@@ -5,6 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import gen_salt
 from flask import jsonify
 
+from flask_oauthlib.provider import OAuth1Provider
+
 app = Flask(__name__, template_folder = 'templates')
 app.debug = True
 app.secret_key = 'secret'
@@ -12,6 +14,13 @@ app.config.update({
     'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.sqlite',
     })
 db = SQLAlchemy(app)
+
+#Add oauth1 provider
+app.config.update({
+    'OAUTH1_PROVIDER_ENFORCE_SSL': False,
+    'OAUTH1_PROVIDER_KEY_LENGTH': (10, 100),
+})
+oauth = OAuth1Provider(app)
 
 #The User table in the db
 class User(db.Model):
@@ -84,6 +93,10 @@ def client():
         client_key = item.client_key,
         client_secret = item.client_secret
     )
+
+@oauth.clientgetter
+def load_client(client_key):
+    return Client.query.get(client_key)
 
 if __name__ == "__main__":
     db.create_all()
